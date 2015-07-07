@@ -2,5 +2,5 @@ package grailsintro
 
 class CustomerController {
 
-    def index() { }
+    def scaffold = true
 }
