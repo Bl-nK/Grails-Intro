@@ -15,4 +15,5 @@ Sample Grails application for the [Midessa IT Professionals](https://www.faceboo
 2. Easily generate CRUD interfaces
 
 **Just because it was generated, doesn't mean it's the best**
+
 Scaffolding is great for simple databases. However, it can only handle a certain level of complexity.
