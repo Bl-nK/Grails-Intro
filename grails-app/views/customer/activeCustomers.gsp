@@ -1,11 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: brandon
-  Date: 7/7/15
-  Time: 6:35 AM
---%>
-
-<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <meta name="layout" content="main">
@@ -28,5 +20,8 @@
             </g:each>
         </table>
     </g:if>
+    <g:else>
+        <h2>No customers. Tis a sad day.</h2>
+    </g:else>
 </body>
 </html>
