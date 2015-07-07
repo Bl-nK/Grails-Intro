@@ -6,6 +6,9 @@ class Contact {
     String email
     String phone
 
+    Date dateCreated
+    Date lastUpdated
+
     static belongsTo = [customer:Customer]
 
     static constraints = {
