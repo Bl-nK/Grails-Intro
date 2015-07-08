@@ -11,33 +11,6 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: customerInstance, field: 'formattedAddress', 'error')} ">
-	<label for="formattedAddress">
-		<g:message code="customer.formattedAddress.label" default="Formatted Address" />
-		
-	</label>
-	<g:textField name="formattedAddress" value="${customerInstance?.formattedAddress}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: customerInstance, field: 'lat', 'error')} ">
-	<label for="lat">
-		<g:message code="customer.lat.label" default="Lat" />
-		
-	</label>
-	<g:textField name="lat" value="${customerInstance?.lat}"/>
-
-</div>
-
-<div class="fieldcontain ${hasErrors(bean: customerInstance, field: 'lon', 'error')} ">
-	<label for="lon">
-		<g:message code="customer.lon.label" default="Lon" />
-		
-	</label>
-	<g:textField name="lon" value="${customerInstance?.lon}"/>
-
-</div>
-
 <div class="fieldcontain ${hasErrors(bean: customerInstance, field: 'address', 'error')} required">
 	<label for="address">
 		<g:message code="customer.address.label" default="Address" />
