@@ -5,6 +5,9 @@ class Customer {
     String name
     String address
     String status
+    String formattedAddress
+    String lat
+    String lon
 
     Date dateCreated
     Date lastUpdated
@@ -13,5 +16,8 @@ class Customer {
 
     static constraints = {
         status inList: ['Active','Inactive']
+        formattedAddress nullable: true, blank: true
+        lat nullable: true, blank: true
+        lon nullable: true, blank: true
     }
 }
