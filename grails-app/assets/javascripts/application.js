@@ -18,3 +18,15 @@ if (typeof jQuery !== 'undefined') {
 		});
 	})(jQuery);
 }
+
+function initialize() {
+	var mapOptions = {
+		center: { lat: lat, lng: lon},
+		zoom: 20,
+		mapTypeId: 'hybrid'
+	};
+	var map = new google.maps.Map(document.getElementById('map-canvas'),
+		mapOptions);
+	var latlng = new google.maps.LatLng(lat, lng);
+	map.setCenter(latlng);
+}

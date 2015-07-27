@@ -3,6 +3,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style type="text/css">
+		#map-canvas {
+			height: 100%;
+			margin: auto;
+
+		}
+		</style>
+		<script type="text/javascript"
+				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3qDBkZDfstkN7poxsoSno85IkTAG3-x4">
+		</script>
+		<script type="text/javascript">
+			var lat = ${customerInstance.lat};
+			var lon = ${customerInstance.lon};
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'customer.label', default: 'Customer')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
@@ -107,6 +122,11 @@
 				</g:if>
 			
 			</ol>
+
+			<div id="map" style="width: 705px; height: 510px;">
+				<div id="map-canvas"></div>
+			</div>
+
 			<g:form url="[resource:customerInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
 					<g:link class="edit" action="edit" resource="${customerInstance}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
